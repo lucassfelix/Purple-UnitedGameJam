@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float playerSpeed = 1;
 
-   
+    public float maxVelocity = 10.0f;
 
     private Vector3 move;
     // Start is called before the first frame update
@@ -31,10 +31,17 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        // if(playerRB.velocity.magnitude > maxVelocity)
+        // {
+        //     var execedVelocity = playerRB.velocity.magnitude - maxVelocity;
+        //     var opposite = -playerRB .velocity;
+        //     playerRB.AddForce(opposite.normalized *execedVelocity);
+        // }
 
         if (move != Vector3.zero)
         {
-            playerRB.transform.position += move * Time.deltaTime * playerSpeed;
+            playerRB.velocity = move*playerSpeed;
+
         }
     }
 }
