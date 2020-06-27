@@ -48,7 +48,7 @@ MonoBehaviour:
   textPlaceholder: {fileID: 0}
   red_Player: {fileID: 0}
   blue_Player: {fileID: 0}
-  tempoEntreTurnos: 5
+  tempoEntreTurnos: 10
 --- !u!114 &3275745512891298784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,4 +62,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameController: {fileID: 3275745512891298786}
-  playerSpeed: 10
+  playerSpeed: 5
+  maxVelocity: 10
