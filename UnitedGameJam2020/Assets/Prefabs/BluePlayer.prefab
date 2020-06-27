@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 3813789430689498604}
   - component: {fileID: 3813789430689498607}
   - component: {fileID: 3813789430689498592}
+  - component: {fileID: 8621548918074030559}
   m_Layer: 0
   m_Name: BluePlayer
   m_TagString: Untagged
@@ -212,3 +213,19 @@ MonoBehaviour:
     m_Bits: 256
   viewMeshFilter: {fileID: 3813789430376008589}
   maskCutawayDst: 0.1
+--- !u!114 &8621548918074030559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3813789430689498606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fc4de28e012c8041be9142f7f0fb485, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChangeMaterial: {fileID: 2100000, guid: 504cc30ddfc0e1946aa7c3e3051371c2, type: 2}
+  ObjectLayer:
+    serializedVersion: 2
+    m_Bits: 256
