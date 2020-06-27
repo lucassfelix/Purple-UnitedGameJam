@@ -19,6 +19,7 @@ public class GameController : MonoBehaviour {
         blue_Player.GetComponent<CampoVisao>().setVisible(false);
     }
 
+
     public GameObject getCurrentPlayer()
     {
         return currentPlayer;

@@ -62,5 +62,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameController: {fileID: 3275745512891298786}
-  playerSpeed: 5
+  playerSpeed: 6
   maxVelocity: 10
