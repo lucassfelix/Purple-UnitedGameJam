@@ -2,21 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-public static class SceneChanger
+public class SceneChanger: MonoBehaviour
 {
-   
-    public static void OnClick()
+
+
+    public void NextScene()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene((SceneManager.GetActiveScene().buildIndex + 1) % SceneManager.sceneCountInBuildSettings);
     }
 
-    public static void NextScene()
-    {
-        SceneManager.LoadScene( (SceneManager.GetActiveScene().buildIndex + 1) % SceneManager.sceneCount);
-    }
-
-    public  static void EndGame()
+    public void EndGame()
     {
 
     }

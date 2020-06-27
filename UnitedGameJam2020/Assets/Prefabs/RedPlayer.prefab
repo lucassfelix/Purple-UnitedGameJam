@@ -229,6 +229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChangeMaterial: {fileID: 2100000, guid: 15a4ed595efb87d40956701017f67fa8, type: 2}
+  sc: {fileID: 0}
 --- !u!96 &7189069686756801003
 TrailRenderer:
   serializedVersion: 2
@@ -269,7 +270,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 5
+  m_Time: 10
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1

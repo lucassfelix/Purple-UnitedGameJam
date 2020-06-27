@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class ColourChange : MonoBehaviour
 {
 
     public Material ChangeMaterial;
- 
+
+    
     
     void OnCollisionEnter(Collision other) {
         Debug.Log("Colisao");
@@ -17,7 +18,7 @@ public class ColourChange : MonoBehaviour
         }
         else if (other.gameObject.tag == "Player")
         {
-            SceneChanger.NextScene();
+            SceneManager.LoadScene((SceneManager.GetActiveScene().buildIndex + 1) % SceneManager.sceneCountInBuildSettings);
         }
     }
     

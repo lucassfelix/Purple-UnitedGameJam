@@ -155,8 +155,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 15.571, y: -74}
-  m_SizeDelta: {x: 992.8579, y: 324.34964}
+  m_AnchoredPosition: {x: 15.571, y: -71.913}
+  m_SizeDelta: {x: 992.8579, y: 380.17484}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &195567775
 MonoBehaviour:
@@ -197,7 +197,10 @@ MonoBehaviour:
     -Touch objects
     and move to paint the screen
 
-    -Every 10 seconds the quare you control changes'
+    -Every 10 seconds the quare you control changes
+
+    -Press
+    ESC to quit at anytime'
 --- !u!222 &195567776
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -638,7 +641,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1691558975}
-        m_MethodName: OnClick
+        m_MethodName: NextScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -763,6 +766,7 @@ GameObject:
   - component: {fileID: 1691558973}
   - component: {fileID: 1691558972}
   - component: {fileID: 1691558975}
+  - component: {fileID: 1691558976}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -845,5 +849,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a281fc4804f42dc44bc118e856e51da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1691558976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691558971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13c05d68e278e9d4989ead3e77d914f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
