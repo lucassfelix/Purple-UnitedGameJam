@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CampoVisao : MonoBehaviour
 {
-    public float viewRadius;
     
+    public float viewPlaceholder = 5;
     public float meshResolution;
     public int edgeResolveIterations;
     public float edgeDstThreshold;
@@ -14,17 +14,29 @@ public class CampoVisao : MonoBehaviour
 
     public MeshFilter viewMeshFilter;
     Mesh viewMesh;
-    
 
+    private float viewRadius;
     void Start()
     {
         viewMesh = new Mesh();
         viewMesh.name = "View Mesh";
         viewMeshFilter.mesh = viewMesh;
-        
+        viewRadius = viewPlaceholder;
     }
 
-    void LateUpdate() {
+    public void setVisible(bool visible)
+    {
+        if(visible)
+        {
+            viewRadius = viewPlaceholder;
+        }
+        else
+        {
+            viewRadius = 0;
+        }
+    }
+
+    void LateUpdate() {   
         DrawFieldOfView();    
     }
 

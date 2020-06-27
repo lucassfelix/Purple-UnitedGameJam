@@ -2,6 +2,8 @@ using UnityEngine;
 using UnityEngine.UI;
 public class GameController : MonoBehaviour {
 
+
+    public GameObject SceneMask;
     public Text textPlaceholder;
     public GameObject red_Player;
     public GameObject blue_Player;
@@ -11,8 +13,10 @@ public class GameController : MonoBehaviour {
 
     private float tempoRestante;
     private void Start() {
+        SceneMask.SetActive(false);
         tempoRestante = tempoEntreTurnos;
         currentPlayer = red_Player;
+        blue_Player.GetComponent<CampoVisao>().setVisible(false);
     }
 
     public GameObject getCurrentPlayer()
@@ -21,13 +25,19 @@ public class GameController : MonoBehaviour {
     }
 
     private void TrocaPlayer() {
+        currentPlayer.GetComponent<CampoVisao>().setVisible(false);
+
         if(currentPlayer == red_Player)
             currentPlayer = blue_Player;
         else   
             currentPlayer = red_Player;
+
+        currentPlayer.GetComponent<CampoVisao>().setVisible(true);
     }
 
     private void Update() {
+        if (currentPlayer == red_Player)
+            blue_Player.GetComponent<CampoVisao>().setVisible(false);
 
         textPlaceholder.text = tempoRestante.ToString("F2");
         
@@ -35,6 +45,7 @@ public class GameController : MonoBehaviour {
         if(tempoRestante < 0)
         {
             TrocaPlayer();
+
             tempoRestante = tempoEntreTurnos;
         }
 

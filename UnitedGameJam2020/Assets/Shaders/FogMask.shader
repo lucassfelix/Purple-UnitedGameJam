@@ -9,8 +9,18 @@
     }
     SubShader
     {
-        Tags { "RenderType"="Opaque" }
+        Tags { "RenderType"="Opaque" "Queue"="Geometry-100"}
+        ColorMask 0
+        ZWrite off
+
         LOD 200
+
+        Stencil {
+            Ref 1
+            Pass replace  
+        }
+
+
 
         CGPROGRAM
         // Physically based Standard lighting model, and enable shadows on all light types
