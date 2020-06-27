@@ -15,6 +15,8 @@ public class CampoVisao : MonoBehaviour
     public MeshFilter viewMeshFilter;
     Mesh viewMesh;
 
+    public float maskCutawayDst = 0.1f;
+
     private float viewRadius;
     void Start()
     {
@@ -81,7 +83,7 @@ public class CampoVisao : MonoBehaviour
         vertices[0] = Vector3.zero;
         for (int i = 0; i < vertexCount - 1; i++)
         {
-            vertices[i + 1] = transform.InverseTransformPoint(viewPoints[i]);
+            vertices[i + 1] = transform.InverseTransformPoint(viewPoints[i]) + (viewPoints[i] - transform.position).normalized * maskCutawayDst;
 
             if (i < vertexCount - 2)
             {

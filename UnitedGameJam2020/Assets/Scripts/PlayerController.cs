@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float playerSpeed = 1;
 
+   
+
     private Vector3 move;
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,9 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
+
+
+
     void FixedUpdate()
     {
 
