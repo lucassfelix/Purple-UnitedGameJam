@@ -107,7 +107,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3813789430689498606}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 75.27156, y: -31.224257, z: -74.01284}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -203,7 +203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bfadb51b9e9f4546852748eef87fbc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  viewRadius: 5
+  viewPlaceholder: 5
   meshResolution: 1
   edgeResolveIterations: 4
   edgeDstThreshold: 0.5
@@ -211,3 +211,4 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   viewMeshFilter: {fileID: 3813789430376008589}
+  maskCutawayDst: 0.1
