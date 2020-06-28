@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2364614948472899923}
   - component: {fileID: 2364614948472899922}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: WinParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
