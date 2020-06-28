@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 195567776}
   - component: {fileID: 195567775}
   m_Layer: 5
-  m_Name: Intructions
+  m_Name: CreditsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
