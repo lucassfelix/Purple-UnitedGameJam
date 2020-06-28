@@ -22226,11 +22226,6 @@ PrefabInstance:
       propertyPath: space
       value: 
       objectReference: {fileID: 617263521}
-    - target: {fileID: 3275745512891298786, guid: 5a6e357de6ea838409069116913b227a,
-        type: 3}
-      propertyPath: tempoEntreTurnos
-      value: 7.94
-      objectReference: {fileID: 0}
     - target: {fileID: 3275745512891298787, guid: 5a6e357de6ea838409069116913b227a,
         type: 3}
       propertyPath: m_LocalPosition.x

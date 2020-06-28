@@ -48,9 +48,9 @@ MonoBehaviour:
   SceneMask: {fileID: 0}
   textPlaceholder: {fileID: 0}
   space: {fileID: 0}
-  red_Player: {fileID: 0}
-  blue_Player: {fileID: 0}
-  tempoEntreTurnos: 8
+  redPlayer: {fileID: 0}
+  bluePlayer: {fileID: 0}
+  tempoEntreTurnos: 7.95
   redSong: {fileID: 8300000, guid: e14d0e6b25b0cf04e9a4982a45809b12, type: 3}
   blueSong: {fileID: 8300000, guid: 8bd66571806daf0478bc55e2d15a3484, type: 3}
   purpleSong: {fileID: 8300000, guid: a39bc53e2570ebf4ca41eba9eb47b20d, type: 3}

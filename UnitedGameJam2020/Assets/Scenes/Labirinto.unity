@@ -3883,6 +3883,16 @@ PrefabInstance:
       propertyPath: space
       value: 
       objectReference: {fileID: 1156697472}
+    - target: {fileID: 3275745512891298786, guid: 5a6e357de6ea838409069116913b227a,
+        type: 3}
+      propertyPath: bluePlayer
+      value: 
+      objectReference: {fileID: 1200310637}
+    - target: {fileID: 3275745512891298786, guid: 5a6e357de6ea838409069116913b227a,
+        type: 3}
+      propertyPath: redPlayer
+      value: 
+      objectReference: {fileID: 554842096}
     - target: {fileID: 3275745512891298787, guid: 5a6e357de6ea838409069116913b227a,
         type: 3}
       propertyPath: m_LocalPosition.x

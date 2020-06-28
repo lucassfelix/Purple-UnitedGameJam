@@ -210,7 +210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   viewPlaceholder: 5
   meshResolution: 1
-  edgeResolveIterations: 2
+  edgeResolveIterations: 4
   edgeDstThreshold: 0.5
   obstacleMask:
     serializedVersion: 2

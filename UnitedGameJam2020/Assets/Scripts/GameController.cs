@@ -7,8 +7,8 @@ public class GameController : MonoBehaviour {
     public GameObject SceneMask;
     public Text textPlaceholder;
     public Text space;
-    public GameObject red_Player;
-    public GameObject blue_Player;
+    public GameObject redPlayer;
+    public GameObject bluePlayer;
     private GameObject currentPlayer;
 
     public float tempoEntreTurnos = 5;
@@ -23,15 +23,22 @@ public class GameController : MonoBehaviour {
 
     private float tempoRestante;
     private void Start() {
-        space.enabled = false;
         stopTimer = false;
+        if(SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            stopTimer = true;
+        }
+        space.enabled = false;
         SceneMask.SetActive(false);
         tempoRestante = tempoEntreTurnos;
-        currentPlayer = red_Player;
-        
-        blue_Player.GetComponent<CampoVisao>().setVisible(false);
+        currentPlayer = redPlayer;
+        bluePlayer.GetComponent<CampoVisao>().setVisible(false);
         GetComponent<AudioSource>().Play();
+    }
 
+    public void tutorialTrigger()
+    {
+        TrocaPlayer();
     }
 
     public void WinLevel(Vector3 collisionPoint)
@@ -45,13 +52,13 @@ public class GameController : MonoBehaviour {
         stopTimer = true;
         textPlaceholder.text = "CONGRATS";
         space.enabled = true;
-        red_Player.GetComponent<MeshRenderer>().material = purpleMaterial;
-        red_Player.GetComponent<TrailRenderer>().material = purpleMaterial;
-        red_Player.GetComponent<ParticleSystemRenderer>().material = purpleMaterial;
+        redPlayer.GetComponent<MeshRenderer>().material = purpleMaterial;
+        redPlayer.GetComponent<TrailRenderer>().material = purpleMaterial;
+        redPlayer.GetComponent<ParticleSystemRenderer>().material = purpleMaterial;
 
-        blue_Player.GetComponent<MeshRenderer>().material = purpleMaterial;
-        blue_Player.GetComponent<TrailRenderer>().material = purpleMaterial;
-        blue_Player.GetComponent<ParticleSystemRenderer>().material = purpleMaterial;
+        bluePlayer.GetComponent<MeshRenderer>().material = purpleMaterial;
+        bluePlayer.GetComponent<TrailRenderer>().material = purpleMaterial;
+        bluePlayer.GetComponent<ParticleSystemRenderer>().material = purpleMaterial;
 
 
 
@@ -66,25 +73,25 @@ public class GameController : MonoBehaviour {
     private void TrocaPlayer() {
         currentPlayer.GetComponent<CampoVisao>().setVisible(false);
 
-        if(currentPlayer == red_Player)
+        if(currentPlayer == redPlayer)
         {
             GetComponent<AudioSource>().clip = blueSong;
             GetComponent<AudioSource>().Play();
-            currentPlayer = blue_Player;
+            currentPlayer = bluePlayer;
         }
         else   
         {
             GetComponent<AudioSource>().clip = redSong;
             GetComponent<AudioSource>().Play();
-            currentPlayer = red_Player;
+            currentPlayer = redPlayer;
         }
 
         currentPlayer.GetComponent<CampoVisao>().setVisible(true);
     }
 
     private void Update() {
-        if (currentPlayer == red_Player)
-            blue_Player.GetComponent<CampoVisao>().setVisible(false);
+        if (currentPlayer == redPlayer)
+            bluePlayer.GetComponent<CampoVisao>().setVisible(false);
 
         
         if(Input.GetKeyDown(KeyCode.Space))

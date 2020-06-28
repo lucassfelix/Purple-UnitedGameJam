@@ -20,7 +20,6 @@ public class ColourChange : MonoBehaviour
         }
         else if (other.gameObject.tag == "Player")
         {
-            
             changeMaterial = winChangeMaterial;
             gameController.WinLevel(other.GetContact(0).point);
         }
