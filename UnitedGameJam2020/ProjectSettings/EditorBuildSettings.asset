@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Sala.unity
     guid: b6000edc5d9fdc84c9c64791eef52473
   - enabled: 1
+    path: Assets/Scenes/QuatroTri.unity
+    guid: 386b0595f6b7b0646be8f11fdd99075e
+  - enabled: 1
     path: Assets/Scenes/Labirinto.unity
     guid: c699e7895c6b0d049862c08e3792cae1
   - enabled: 1

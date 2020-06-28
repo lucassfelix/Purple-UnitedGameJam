@@ -1334,7 +1334,7 @@ GameObject:
   - component: {fileID: 314957128}
   - component: {fileID: 314957127}
   - component: {fileID: 314957126}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Paredao
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1372,7 +1372,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: b49748c5e4bdc11468a14bbc6d28869f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2305,7 +2305,7 @@ GameObject:
   - component: {fileID: 514259600}
   - component: {fileID: 514259599}
   - component: {fileID: 514259598}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Paredao (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2343,7 +2343,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: b49748c5e4bdc11468a14bbc6d28869f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3016,7 +3016,7 @@ GameObject:
   - component: {fileID: 710259563}
   - component: {fileID: 710259562}
   - component: {fileID: 710259561}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Paredao (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3054,7 +3054,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: b49748c5e4bdc11468a14bbc6d28869f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5332,7 +5332,7 @@ GameObject:
   - component: {fileID: 1332238432}
   - component: {fileID: 1332238431}
   - component: {fileID: 1332238430}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Paredao (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5370,7 +5370,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: b49748c5e4bdc11468a14bbc6d28869f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9543,6 +9543,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BluePlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 8621548918074030559, guid: 98ad118a2b8e5514c9b19aa77723f54e,
+        type: 3}
+      propertyPath: gameController
+      value: 
+      objectReference: {fileID: 599157632}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98ad118a2b8e5514c9b19aa77723f54e, type: 3}
 --- !u!1001 &5939648426822731438
@@ -9555,7 +9560,7 @@ PrefabInstance:
     - target: {fileID: 5939648427452910326, guid: 149a0fc967ae1e244bcf1c8677fb7125,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.7
+      value: -14.52
       objectReference: {fileID: 0}
     - target: {fileID: 5939648427452910326, guid: 149a0fc967ae1e244bcf1c8677fb7125,
         type: 3}
@@ -9565,7 +9570,7 @@ PrefabInstance:
     - target: {fileID: 5939648427452910326, guid: 149a0fc967ae1e244bcf1c8677fb7125,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -12.1
+      value: -65.6
       objectReference: {fileID: 0}
     - target: {fileID: 5939648427452910326, guid: 149a0fc967ae1e244bcf1c8677fb7125,
         type: 3}
@@ -9612,6 +9617,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedPlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 9147151989265524622, guid: 149a0fc967ae1e244bcf1c8677fb7125,
+        type: 3}
+      propertyPath: gameController
+      value: 
+      objectReference: {fileID: 599157632}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 149a0fc967ae1e244bcf1c8677fb7125, type: 3}
 --- !u!1001 &8904317956075298090
