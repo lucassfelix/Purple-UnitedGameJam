@@ -46,9 +46,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneMask: {fileID: 0}
   textPlaceholder: {fileID: 0}
+  space: {fileID: 0}
   red_Player: {fileID: 0}
   blue_Player: {fileID: 0}
-  tempoEntreTurnos: 10
+  tempoEntreTurnos: 8
   purpleMaterial: {fileID: 2100000, guid: 880412ecc75e10e4a89ef05b13abcc6d, type: 2}
   winParticle: {fileID: 2364614948472899925, guid: c5cdd198657a5434797b26b057cdcd19,
     type: 3}
