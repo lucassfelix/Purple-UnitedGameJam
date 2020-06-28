@@ -531,7 +531,7 @@ PrefabInstance:
     - target: {fileID: 5939648427452910326, guid: 149a0fc967ae1e244bcf1c8677fb7125,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.3
+      value: 11.7
       objectReference: {fileID: 0}
     - target: {fileID: 5939648427452910326, guid: 149a0fc967ae1e244bcf1c8677fb7125,
         type: 3}
@@ -541,7 +541,7 @@ PrefabInstance:
     - target: {fileID: 5939648427452910326, guid: 149a0fc967ae1e244bcf1c8677fb7125,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2
+      value: 3.61
       objectReference: {fileID: 0}
     - target: {fileID: 5939648427452910326, guid: 149a0fc967ae1e244bcf1c8677fb7125,
         type: 3}
@@ -593,6 +593,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedPlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 9147151989265524622, guid: 149a0fc967ae1e244bcf1c8677fb7125,
+        type: 3}
+      propertyPath: gameController
+      value: 
+      objectReference: {fileID: 1935671594}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 149a0fc967ae1e244bcf1c8677fb7125, type: 3}
 --- !u!1 &219466096 stripped
@@ -2749,6 +2754,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BluePlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 8621548918074030559, guid: 98ad118a2b8e5514c9b19aa77723f54e,
+        type: 3}
+      propertyPath: gameController
+      value: 
+      objectReference: {fileID: 1935671594}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98ad118a2b8e5514c9b19aa77723f54e, type: 3}
 --- !u!4 &1073965997 stripped
@@ -3071,6 +3081,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1128171825}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1156697472 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 58326633652241011, guid: ad49220b409425d47bd886fe0e9a283c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8904317956075298090}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1165920553 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7174068390019861402, guid: eb5b824378a9cdb459126d7fb6a0ede7,
@@ -3826,6 +3848,11 @@ PrefabInstance:
       propertyPath: textPlaceholder
       value: 
       objectReference: {fileID: 2004855567}
+    - target: {fileID: 3275745512891298786, guid: 5a6e357de6ea838409069116913b227a,
+        type: 3}
+      propertyPath: space
+      value: 
+      objectReference: {fileID: 1156697472}
     - target: {fileID: 3275745512891298787, guid: 5a6e357de6ea838409069116913b227a,
         type: 3}
       propertyPath: m_LocalPosition.x

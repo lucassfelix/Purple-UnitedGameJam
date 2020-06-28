@@ -228,8 +228,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fc4de28e012c8041be9142f7f0fb485, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangeMaterial: {fileID: 2100000, guid: 15a4ed595efb87d40956701017f67fa8, type: 2}
-  sc: {fileID: 0}
+  changeMaterial: {fileID: 2100000, guid: 97d88c1f34a7f284f917fb624048a7c2, type: 2}
+  winChangeMaterial: {fileID: 2100000, guid: 880412ecc75e10e4a89ef05b13abcc6d, type: 2}
+  gameController: {fileID: 3275745512891298786, guid: 5a6e357de6ea838409069116913b227a,
+    type: 3}
 --- !u!96 &7189069686756801003
 TrailRenderer:
   serializedVersion: 2
