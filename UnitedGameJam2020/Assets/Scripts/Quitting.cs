@@ -8,8 +8,12 @@ public class Quitting : MonoBehaviour
     {
         if (Input.GetKey("escape"))
         {
-            Debug.Log("Sai daqui");
-            Application.Quit();
+            Quit();
         }
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 }
