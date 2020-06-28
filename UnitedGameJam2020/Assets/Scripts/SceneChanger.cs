@@ -11,6 +11,11 @@ public class SceneChanger: MonoBehaviour
         SceneManager.LoadScene((SceneManager.GetActiveScene().buildIndex + 1) % SceneManager.sceneCountInBuildSettings);
     }
 
+    public void SelectScene(int scene_id)
+    {
+        SceneManager.LoadScene(scene_id);
+    }
+
     public void EndGame()
     {
 
