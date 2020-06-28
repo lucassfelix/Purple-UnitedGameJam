@@ -12,6 +12,10 @@ public class GameController : MonoBehaviour {
     private GameObject currentPlayer;
 
     public float tempoEntreTurnos = 5;
+
+    public AudioClip redSong;
+    public AudioClip blueSong;
+    public AudioClip purpleSong;
     
     public Material purpleMaterial;
     public GameObject winParticle;
@@ -24,13 +28,20 @@ public class GameController : MonoBehaviour {
         SceneMask.SetActive(false);
         tempoRestante = tempoEntreTurnos;
         currentPlayer = red_Player;
+        
         blue_Player.GetComponent<CampoVisao>().setVisible(false);
+        GetComponent<AudioSource>().Play();
+
     }
 
     public void WinLevel(Vector3 collisionPoint)
     {
         if(!stopTimer)
+        {
+            GetComponent<AudioSource>().clip = purpleSong;
+            GetComponent<AudioSource>().Play();
             Instantiate(winParticle,collisionPoint, Quaternion.identity);
+        }
         stopTimer = true;
         textPlaceholder.text = "CONGRATS";
         space.enabled = true;
@@ -56,9 +67,17 @@ public class GameController : MonoBehaviour {
         currentPlayer.GetComponent<CampoVisao>().setVisible(false);
 
         if(currentPlayer == red_Player)
+        {
+            GetComponent<AudioSource>().clip = blueSong;
+            GetComponent<AudioSource>().Play();
             currentPlayer = blue_Player;
+        }
         else   
+        {
+            GetComponent<AudioSource>().clip = redSong;
+            GetComponent<AudioSource>().Play();
             currentPlayer = red_Player;
+        }
 
         currentPlayer.GetComponent<CampoVisao>().setVisible(true);
     }
