@@ -230,7 +230,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changeMaterial: {fileID: 2100000, guid: 4660284b7475f014993c3faa7de2b6e2, type: 2}
   winChangeMaterial: {fileID: 2100000, guid: 880412ecc75e10e4a89ef05b13abcc6d, type: 2}
-  gameController: {fileID: 0}
+  gameController: {fileID: 3275745512891298786, guid: 5a6e357de6ea838409069116913b227a,
+    type: 3}
 --- !u!96 &3728822993216561116
 TrailRenderer:
   serializedVersion: 2
