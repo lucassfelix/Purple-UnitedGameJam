@@ -1,2 +1,3 @@
-# UnitedGameJam2020
- 
+# Purple
+Game made under 48 hours for the United Game Jam 2020
+Play here: https://lsfelix.itch.io/purple-ugj
