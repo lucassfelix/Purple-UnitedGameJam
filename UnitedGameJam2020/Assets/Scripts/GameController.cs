@@ -24,20 +24,27 @@ public class GameController : MonoBehaviour {
     private float tempoRestante;
     private void Start() {
         stopTimer = false;
+
         if(SceneManager.GetActiveScene().buildIndex == 1)
         {
             stopTimer = true;
         }
+
         space.enabled = false;
         SceneMask.SetActive(false);
+
         tempoRestante = tempoEntreTurnos;
         currentPlayer = redPlayer;
+        textPlaceholder.text = "";
+
         bluePlayer.GetComponent<CampoVisao>().setVisible(false);
-        GetComponent<AudioSource>().Play();
+        this.GetComponent<AudioSource>().Play();
     }
 
     public void tutorialTrigger()
     {
+        textPlaceholder.text = tempoRestante.ToString("F2");
+        stopTimer = false;
         TrocaPlayer();
     }
 
@@ -45,8 +52,8 @@ public class GameController : MonoBehaviour {
     {
         if(!stopTimer)
         {
-            GetComponent<AudioSource>().clip = purpleSong;
-            GetComponent<AudioSource>().Play();
+            this.GetComponent<AudioSource>().clip = purpleSong;
+            this.GetComponent<AudioSource>().Play();
             Instantiate(winParticle,collisionPoint, Quaternion.identity);
         }
         stopTimer = true;
@@ -59,9 +66,6 @@ public class GameController : MonoBehaviour {
         bluePlayer.GetComponent<MeshRenderer>().material = purpleMaterial;
         bluePlayer.GetComponent<TrailRenderer>().material = purpleMaterial;
         bluePlayer.GetComponent<ParticleSystemRenderer>().material = purpleMaterial;
-
-
-
 
     }
 

@@ -583,11 +583,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5939648427452910327, guid: 149a0fc967ae1e244bcf1c8677fb7125,
-        type: 3}
-      propertyPath: edgeResolveIterations
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 5939648427452910333, guid: 149a0fc967ae1e244bcf1c8677fb7125,
         type: 3}
       propertyPath: m_Name
@@ -3848,24 +3843,24 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 945693640662742861, guid: 5a6e357de6ea838409069116913b227a,
+        type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3275745512891298589, guid: 5a6e357de6ea838409069116913b227a,
         type: 3}
       propertyPath: m_Name
       value: GameController
       objectReference: {fileID: 0}
-    - target: {fileID: 3275745512891298784, guid: 5a6e357de6ea838409069116913b227a,
-        type: 3}
-      propertyPath: maxVelocityChange
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3275745512891298786, guid: 5a6e357de6ea838409069116913b227a,
         type: 3}
-      propertyPath: red_Player
+      propertyPath: redPlayer
       value: 
       objectReference: {fileID: 554842096}
     - target: {fileID: 3275745512891298786, guid: 5a6e357de6ea838409069116913b227a,
         type: 3}
-      propertyPath: blue_Player
+      propertyPath: bluePlayer
       value: 
       objectReference: {fileID: 1200310637}
     - target: {fileID: 3275745512891298786, guid: 5a6e357de6ea838409069116913b227a,
@@ -3883,16 +3878,6 @@ PrefabInstance:
       propertyPath: space
       value: 
       objectReference: {fileID: 1156697472}
-    - target: {fileID: 3275745512891298786, guid: 5a6e357de6ea838409069116913b227a,
-        type: 3}
-      propertyPath: bluePlayer
-      value: 
-      objectReference: {fileID: 1200310637}
-    - target: {fileID: 3275745512891298786, guid: 5a6e357de6ea838409069116913b227a,
-        type: 3}
-      propertyPath: redPlayer
-      value: 
-      objectReference: {fileID: 554842096}
     - target: {fileID: 3275745512891298787, guid: 5a6e357de6ea838409069116913b227a,
         type: 3}
       propertyPath: m_LocalPosition.x
